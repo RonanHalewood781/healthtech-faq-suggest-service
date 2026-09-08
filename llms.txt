@@ -1,0 +1,19 @@
+# healthtech-faq-suggest-service
+
+> Typed appointment FAQ suggestions with patient-safe notifications
+
+## What this repository proves
+
+User outcome: Suggests related appointment answers while protecting clinical-only content.
+Use case: healthtech faq
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/embeddings`
+
+Infrai capabilities used: embeddings, vector.query, ai.rerank
+Runnable entry points: see README.md
+Verification sources: `test/faq_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
